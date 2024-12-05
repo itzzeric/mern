@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagonal Images with Border Styles</title>
+  <style>
+    body {
+      position: relative; /* Needed for absolute positioning of the images */
+      height: 100vh;       /* Full viewport height to make sure images stay on screen */
+      margin: 0;
+      background-color: #f0f0f0; /* Light background color */
+    }
+
+    /* Container for the images */
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style for the first image with a dotted border */
+    .image1 {
+      position: absolute;
+      top: 10%;    /* 10% from the top */
+      left: 10%;   /* 10% from the left */
+      width: 200px;
+      border: 5px dotted red; /* Dotted red border */
+      border-radius: 10px;    /* Rounded corners */
+    }
+
+    /* Style for the second image with a dashed border */
+    .image2 {
+      position: absolute;
+      top: 10%;    /* 10% from the top */
+      left: 40%;   /* 40% from the left */
+      width: 200px;
+      border: 5px dashed blue; /* Dashed blue border */
+      border-radius: 10px;     /* Rounded corners */
+    }
+
+    /* Style for the third image with a solid border */
+    .image3 {
+      position: absolute;
+      top: 10%;    /* 10% from the top */
+      left: 70%;   /* 70% from the left */
+      width: 200px;
+      border: 5px solid green; /* Solid green border */
+      border-radius: 10px;     /* Rounded corners */
+    }
+
+    /* Style for the fourth image with a groove border */
+    .image4 {
+      position: absolute;
+      top: 40%;    /* 40% from the top */
+      left: 10%;   /* 10% from the left */
+      width: 200px;
+      border: 5px groove orange; /* Groove orange border */
+      border-radius: 10px;       /* Rounded corners */
+    }
+
+    /* Style for the fifth image with a ridge border */
+    .image5 {
+      position: absolute;
+      top: 40%;    /* 40% from the top */
+      left: 40%;   /* 40% from the left */
+      width: 200px;
+      border: 5px ridge purple; /* Ridge purple border */
+      border-radius: 10px;      /* Rounded corners */
+    }
+
+    /* Style for the sixth image with an inset border */
+    .image6 {
+      position: absolute;
+      top: 40%;    /* 40% from the top */
+      left: 70%;   /* 70% from the left */
+      width: 200px;
+      border: 5px inset brown; /* Inset brown border */
+      border-radius: 10px;     /* Rounded corners */
+    }
+
+    /* Style for the seventh image with an outset border */
+    .image7 {
+      position: absolute;
+      top: 70%;    /* 70% from the top */
+      left: 10%;   /* 10% from the left */
+      width: 200px;
+      border: 5px outset pink; /* Outset pink border */
+      border-radius: 10px;     /* Rounded corners */
+    }
+
+    /* Style for the eighth image with no border */
+    .image8 {
+      position: absolute;
+      top: 70%;    /* 70% from the top */
+      left: 40%;   /* 40% from the left */
+      width: 200px;
+      border: none; /* No border */
+    }
+
+    /* Style for the ninth image with a hidden border */
+    .image9 {
+      position: absolute;
+      top: 70%;    /* 70% from the top */
+      left: 70%;   /* 70% from the left */
+      width: 200px;
+      border: 5px hidden black; /* Hidden black border */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Container that holds the images -->
+  <div class="image-container">
+    <!-- First image with a dotted border -->
+    <img src="C:\Users\MY PC\Downloads\icegif-1617.gif" alt="Image 1" class="image1">
+
+    <!-- Second image with a dashed border -->
+    <img src="C:\Users\MY PC\Downloads\funny-laugh.gif" alt="Image 2" class="image2">
+
+    <!-- Third image with a solid border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 3" class="image3">
+
+    <!-- Fourth image with a groove border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 4" class="image4">
+
+    <!-- Fifth image with a ridge border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 5" class="image5">
+
+    <!-- Sixth image with an inset border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 6" class="image6">
+
+    <!-- Seventh image with an outset border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 7" class="image7">
+
+    <!-- Eighth image with no border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 8" class="image8">
+
+    <!-- Ninth image with a hidden border -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/800px-FullMoon2010.jpg" alt="Image 9" class="image9">
+  </div>
+
+</body>
+</html>
