@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Internal CSS for element selector */
+    p {
+      color: blue;  /* Changes the text color of all <p> elements */
+    }
+
+    /* Internal CSS for class selector */
+    .highlight {
+      color: green;  /* Changes the text color of elements with class 'highlight' */
+    }
+
+    /* Internal CSS for ID selector */
+    #special-text {
+      color: red;  /* Changes the text color of the element with ID 'special-text' */
+    }
+  </style>
+
+  <!-- Embedding External CSS Styles (as internal for demonstration purposes) -->
+  <style>
+    /* External CSS (Simulated as internal for this demo) */
+    body {
+      font-family: Arial, sans-serif; /* External style */
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Inline CSS for the first paragraph -->
+  <p style="color: blue;">This paragraph will have a <strong>blue</strong> text color due to the element selector (Inline CSS).</p>
+
+  <!-- Inline CSS for the second paragraph -->
+  <p style="color: green;" class="highlight">This paragraph will have a <strong>green</strong> text color due to the class selector (Inline CSS).</p>
+
+  <!-- Inline CSS for the third paragraph -->
+  <p style="color: red;" id="special-text">This paragraph will have a <strong>red</strong> text color due to the ID selector (Inline CSS).</p>
+
+</body>
+</html>

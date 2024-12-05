@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* 1. Using Element Selector */
+    p {
+      color: blue;  /* Changes the text color of all <p> elements */
+    }
+
+    /* 2. Using Class Selector */
+    .highlight {
+      color: green;  /* Changes the text color of elements with class 'highlight' */
+    }
+
+    /* 3. Using ID Selector */
+    #special-text {
+      color: red;  /* Changes the text color of the element with ID 'special-text' */
+    }
+  </style>
+</head>
+<body>
+
+  <p>This paragraph will have a <strong>blue</strong> text color due to the element selector.</p>
+
+  <p class="highlight">This paragraph will have a <strong>green</strong> text color due to the class selector.</p>
+
+  <p id="special-text">This paragraph will have a <strong>red</strong> text color due to the ID selector.</p>
+
+</body>
+</html>
