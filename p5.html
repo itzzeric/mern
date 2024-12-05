@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exclusive Online Sale</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #ff7f50, #ff6347);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Container for All Content */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Sale Description */
+        .sale-description {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .highlighted {
+            font-weight: bold;
+            font-style: italic;
+            color: #ff6347;
+        }
+
+        /* Testimonial Section */
+        .testimonial {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+        .testimonial p {
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        .testimonial strong {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Product Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .features ul li {
+            margin-bottom: 1.2rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        .features ul li::before {
+            content: "✔";
+            color: #ff6347;
+            position: absolute;
+            left: 0;
+            font-size: 1.3rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #d6b4ae;
+            text-transform: uppercase;
+        }
+        .discount-price {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        /* Chemical Formula */
+        .chemical-formula {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+        .chemical-formula strong {
+            font-size: 2rem;
+        }
+
+        /* Definition List Section */
+        .definition-list {
+            background-color: #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .definition-list h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .definition-list dl {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+        }
+        .definition-list dt {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .definition-list dd {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Image Styling */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media Styling */
+        .media-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .media-container video,
+        .media-container audio {
+            width: 80%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exclusive Online Sale</h1>
+</header>
+
+<div class="container">
+
+    <!-- Sale Description -->
+    <section class="sale-description">
+        <p>Get ready for the biggest sale of the year! Enjoy <span class="highlighted">up to 50% off</span> on our best-selling items. Don't miss this <span class="highlighted">limited-time offer</span> – shop now and save big!</p>
+    </section>
+
+    <!-- Product Image -->
+    <section class="product-image-container">
+        <img src="C:\Users\MY PC\Pictures\luffy.gif" alt="Product Image" class="product-image">
+    </section>
+
+    <section class="pricing">
+        <p class="price">
+            <span class="strikethrough">$20.00</span>
+            <span class="discount-price">$60.00</span>
+        </p>
+    </section>
+
+    <section class="product-image-container">
+        <img src="C:\Users\MY PC\Pictures\tanjiro.gif" alt="Product Image" class="product-image">
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+        <p>"I can't believe how amazing this product is! It exceeded all my expectations and saved me so much time. It's a must-have!" – <strong>Emily D.</strong></p>
+    </section>
+
+    <!-- Product Features -->
+    <section class="features">
+        <h2>Product Features:</h2>
+        <ul>
+            <li>Made with premium, eco-friendly materials</li>
+            <li>Designed for durability and long-lasting performance</li>
+            <li>Easy to use with a simple interface</li>
+            <li>Compact and portable for on-the-go convenience</li>
+        </ul>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <p class="price">
+            <span class="strikethrough">$120.00</span>
+            <span class="discount-price">$60.00</span>
+        </p>
+    </section>
+
+    <!-- Chemical Formula -->
+    <section class="chemical-formula">
+        <p>Formula: <strong>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></strong></p>
+    </section>
+
+    <!-- Definition List -->
+    <section class="definition-list">
+        <h3>Terms & Conditions</h3>
+        <dl>
+            <dt>Offer Validity</dt>
+            <dd>Offer valid until December 31, 2024, or while supplies last.</dd>
+
+            <dt>Free Shipping</dt>
+            <dd>Enjoy free shipping on orders over $50.</dd>
+
+            <dt>Return Policy</dt>
+            <dd>Returns accepted within 30 days of purchase with conditions.</dd>
+
+            <dt>Payment Methods</dt>
+            <dd>We accept credit cards, PayPal, and bank transfers.</dd>
+        </dl>
+    </section>
+<!-- Media Section (Audio & Video) -->
+<section class="media-section">
+    <h2>Listen to our promotional audio and watch the product video:</h2>
+       <!-- Audio element -->
+      <audio controls>
+        <source src="C:\Users\MY PC\Downloads\ambient-technology-261668.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+    <section class="media-container">
+        <!-- Empty Video Tag -->
+        <video controls>
+            <source src="C:\Users\MY PC\Desktop\New folder\Day 1\program 5\4888376-hd_1920_1080_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+</div>
+
+</body>
+</html>
